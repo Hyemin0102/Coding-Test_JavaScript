@@ -1,4 +1,9 @@
 function solution(price) {
+    let answer = price >= 500000 ? price * 0.80 : price >= 300000 ? price * 0.90 : price >= 100000 ? price * 0.95 : price
+    return Math.floor(answer)
+}
+
+/*function solution(price) {
     if(price >= 500000){ 
         return Math.floor(price * 0.80);
     } else if(price >= 300000){ 
@@ -7,16 +12,6 @@ function solution(price) {
         return Math.floor(price * 0.95);
     } else {
         return price;
-    }
-}
-
-/*function solution(price) {
-    if(price >= 100000 && price < 300000){
-        return price * 0.95;
-    } else if(price >= 300000 && price < 500000){
-        return price * 0.90;
-    } else {
-        return price * 0.80;
     }
 }*/
 
