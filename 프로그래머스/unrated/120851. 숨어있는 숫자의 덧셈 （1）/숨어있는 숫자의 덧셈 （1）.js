@@ -1,7 +1,7 @@
 function solution(my_string) {
-    var arr = [...my_string]
     var sum = 0;
-    arr.map(item=> {
+    
+    [...my_string].map(item=> {
         if(Number(item)) sum+=Number(item)
     })
     
