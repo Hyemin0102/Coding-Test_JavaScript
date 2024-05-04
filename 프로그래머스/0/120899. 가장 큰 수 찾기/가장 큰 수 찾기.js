@@ -1,9 +1,8 @@
 function solution(array) {
     let answer = [];
-    let maxNum = Math.max(...array);
-    const isMaxNumber = (element) => element === maxNum; //8과 같은 자리
+    const isMaxNumber = (el) => el === Math.max(...array); //8과 같은 자리
 
-    answer.push( maxNum, array.findIndex(isMaxNumber))
+    answer.push( Math.max(...array), array.findIndex(isMaxNumber))
     return answer;
 }
 
