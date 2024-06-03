@@ -10,6 +10,12 @@ function solution(emergency) {
       result.push([item,index+1])
     });
 
+    /* result = [
+        [76,1],
+        [24,2],
+        [3,3]
+    ] */
+
     let test = [];
     emergency.forEach(item => {
         //이중배열 중 원래 배열의 0번째 인덱스와 맞는값 찾아서 1번째 인덱스 출력
